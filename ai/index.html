@@ -17,9 +17,9 @@
 
     <!-- CSS
     ================================================== -->
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="ai/css/base.css">
+    <link rel="stylesheet" href="ai/css/vendor.css">
+    <link rel="stylesheet" href="ai/css/main.css">
 
     <style type="text/css" media="screen">
         .s-styles { 
@@ -30,7 +30,7 @@
 
     <!-- script
     ================================================== -->
-    <script src="js/modernizr.js"></script>
+    <script src="ai/js/modernizr.js"></script>
 
     <!-- favicons
     ================================================== -->
@@ -268,4 +268,220 @@ href="#">VIP22</a></li>
                 </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
                 "Next (arrow right)"></button>
                 <div class="pswp__caption">
-                    <div class="pswp__cap
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> <!-- end photoSwipe background -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+        <script type="text/javascript">
+        
+        function changeJxq(e)
+        {
+            var jxq = e.innerHTML;
+            $('#input').attr('placeholder', '请输入视频链接，正在使用 “' + e.innerHTML + '” 进行解析');
+            var url = '';
+            switch(jxq) {
+                
+
+case 'VIP1':
+                    url = "https://www.8oh.cc/?url=";
+                    break;
+                case 'VIP2':
+                    url = "https://jx.cxk8.com/?url=";
+                    break;
+                case 'VIP3':
+                    url = "https://a.cjw123.com/?url=";
+                    break;
+                case 'VIP4':
+                    url = "https://jx.rdhk.net/?url=";
+                    break;
+                case 'VIP5':
+                    url = "https://jx.xdiaosi.com/?url=";
+                    break;
+                case 'VIP6':
+                    url = "http://vip.hd181.com/index.php?wd=";
+                    break;
+                case 'VIP7':
+                    url = "https://okjx.cc/?url=";
+                    break;
+                case 'VIP8':
+                    url = "https://www.mtosz.com/m3u8.php?url=";
+                    break;
+                case 'VIP9':
+                    url = "https://parse.123mingren.com/?url=";
+                    break;
+                case 'VIP10':
+                    url = "https://jx.youyitv.com/?url=";
+                    break;
+                case 'VIP11':
+                    url = "https://17kyun.com/api.php?url=";
+                    break;
+                case 'VIP12':
+                    url = "http://jiexi2.xiashipin.net/jiexi/?url=";
+                    break;
+                case 'VIP13':
+                    url = "http://jiexi2.xiashipin.net/jiexi/?url=";
+                    break;
+                case 'VIP14':
+                    url = "https://www.administratorw.com/index/qqvod.php?url=";
+                    break;
+                case 'VIP15':
+                    url = "https://jx.parwix.com:4433/player/?url=";
+                    break;
+                case 'VIP16':
+                    url = "https://jx.4080jx.cc/?url=";
+                    break;
+                case 'VIP17':
+                    url = "https://jx.618g.com/?url=";
+                    break;
+                case 'VIP18':
+                    url = "https://jx.147g.cc/?url=";
+                    break;
+                case 'VIP19':
+                    url = "https://www.8oh.cc/?url=";
+                    break;
+                case 'VIP20':
+                    url = "https://jiexi.t7g.cn/?url=";
+                    break;
+                case 'VIP21':
+                    url = "http://vip.hd181.com/index.php?wd=";
+                case 'VIP22':
+                    url = "https://api.v6.chat/?url=";
+                case 'VIP23':
+                    url = "https://jx.km58.top/jx/?url=";
+                case 'VIP24':
+                    url = "https://jx.lache.me/cc/?url=";
+                case 'VIP25':
+                    url = "https://jx.ab33.top/vip/?url=";
+                case 'VIP26':
+                    url = "https://vip.mpos.ren/v/?url=";
+                case 'VIP27':
+                    url = "https://jx.km58.top/jx/?url=";
+                
+                default:
+                    url = "";
+
+
+            }
+            var link = $('#link').attr('href')
+            link = url + link.split('?url=')[1];
+            console.log(link);
+            $('#link').attr('href', link);
+        }
+
+        function change() 
+        {
+            var v = $('#input').val();
+            var link = $('#link').attr('href')
+            link = link.split('?url=')[0] + '?url=' + v
+            console.log(link);
+            $('#link').attr('href', link);
+        }
+
+        function sub() 
+        {
+          
+            var jxq = $('#jxq').html();
+            var url = '';
+            switch(jxq) {
+                
+case 'VIP1':
+                    url = "https://www.8oh.cc/?url=";
+                    break;
+                case 'VIP2':
+                    url = "https://jx.cxk8.com/?url=";
+                    break;
+                case 'VIP3':
+                    url = "https://a.cjw123.com/?url=";
+                    break;
+                case 'VIP4':
+                    url = "https://jx.rdhk.net/?url=";
+                    break;
+                case 'VIP5':
+                    url = "https://jx.xdiaosi.com/?url=";
+                    break;
+                case 'VIP6':
+                    url = "https://www.yq52.cn/film/?v=";
+                    break;
+                case 'VIP7':
+                    url = "https://okjx.cc/?url=";
+                    break;
+                case 'VIP8':
+                    url = "https://www.mtosz.com/m3u8.php?url=";
+                    break;
+                case 'VIP9':
+                    url = "https://parse.123mingren.com/?url=";
+                    break;
+                case 'VIP10':
+                    url = "https://jx.youyitv.com/?url=";
+                    break;
+                case 'VIP11':
+                    url = "https://17kyun.com/api.php?url=";
+                    break;
+                case 'VIP12':
+                    url = "http://jiexi2.xiashipin.net/jiexi/?url=";
+                    break;
+                case 'VIP13':
+                    url = "http://jiexi2.xiashipin.net/jiexi/?url=";
+                    break;
+                case 'VIP14':
+                    url = "https://www.administratorw.com/index/qqvod.php?url=";
+                    break;
+                case 'VIP15':
+                    url = "https://jx.parwix.com:4433/player/?url=";
+                    break;
+                case 'VIP16':
+                    url = "https://jx.4080jx.cc/?url=";
+                    break;
+                case 'VIP17':
+                    url = "https://jx.618g.com/?url=";
+                    break;
+                case 'VIP18':
+                    url = "https://jx.147g.cc/?url=";
+                    break;
+                case 'VIP19':
+                    url = "https://www.8oh.cc/?url=";
+                    break;
+                case 'VIP20':
+                    url = "https://jiexi.t7g.cn/?url=";
+                    break;
+                case 'VIP21':
+                    url = "http://www.2ajx.com/vip.php?url=";
+                case 'VIP22':
+                    url = "https://api.v6.chat/?url=";
+                case 'VIP23':
+                    url = "https://jx.km58.top/jx/?url=";
+                case 'VIP24':
+                    url = "https://jx.lache.me/cc/?url=";
+                case 'VIP25':
+                    url = "https://jx.ab33.top/vip/?url=";
+                case 'VIP26':
+                    url = "https://vip.mpos.ren/v/?url=";
+                case 'VIP27':
+                    url = "https://jx.km58.top/jx/?url=";
+                
+                default:
+                    url = "";
+
+
+            }
+            url += $('#input').val();
+            console.log(url);
+            window.open(url, "");
+        }
+
+
+    </script>
+
+
+</body>
